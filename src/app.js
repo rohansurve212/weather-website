@@ -5,10 +5,11 @@ const hbs = require('hbs');
 const utils = require('./utils');
 
 const app = express();
+const port = process.env.PORT || 3000;
 
 // Define paths for Express config
 const publicDirPath = path.join(__dirname, '../public');
-const viewsPath = path.join(__dirname, '../templates/views')
+const viewsPath = path.join(__dirname, '../templates/views');
 const partialsPath = path.join(__dirname, '../templates/partials');
 
 // Setup handlebars engine and views location
@@ -109,6 +110,6 @@ app.get('*', (req, res) => {
 // app.com/help
 // app.com/about
 
-app.listen(3000, () => {
-    console.log('Server is up on port 3000.');
+app.listen(port, () => {
+    console.log(`Server is up on port ${port}.`);
 })
