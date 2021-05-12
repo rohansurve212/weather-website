@@ -23,7 +23,7 @@ app.use(express.static(publicDirPath));
 app.get('', (req, res) => {
     res.render('index', {
         title: 'Weather App',
-        name: 'The Jedi Master'
+        name: 'Rohan Surve'
     });
 })
 
@@ -31,7 +31,7 @@ app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
         aboutMessage: 'I am Rohan Surve, the developer of this application. I am thrilled to bring you this simple but powerful application to know the current weather of any region around the globe. It uses data from mapbox.com and weatherstack.com!',
-        name: 'The Jedi Master'
+        name: 'Rohan Surve'
     })
 })
 
@@ -39,7 +39,7 @@ app.get('/help', (req, res) => {
     res.render('help', {
         title: 'Help',
         helpMessage: 'This is our 24/7 help center. Please ask me if you need any help with the app.',
-        name: 'The Jedi Master'
+        name: 'Rohan Surve'
     })
 })
 
