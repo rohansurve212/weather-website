@@ -71,7 +71,8 @@ app.get('/weather', (req, res) => {
                 'Feels Like': forecastData.Feels_Like,
                 'Wind_Speed': forecastData.Wind_Speed,
                 'Wind_Direction': forecastData.Wind_Direction,
-                'Precipitation': forecastData.Precipitation
+                'Precipitation': forecastData.Precipitation,
+                'Humidity': forecastData.Humidity
             })
         })
     })

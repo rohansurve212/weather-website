@@ -43,7 +43,8 @@ const forecast = (latitude, longitude, callback) => {
                 Feels_Like: `${response.body.current.feelslike}°C`,
                 Wind_Speed: `${response.body.current.wind_speed} kmph`,
                 Wind_Direction: `${response.body.current.wind_dir}`,
-                Precipitation: (response.body.current.precip * 100)
+                Precipitation: (response.body.current.precip * 100),
+                Humidity: `${response.body.current.humidity}`
             });
         }
     });

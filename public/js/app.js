@@ -55,7 +55,7 @@ weatherForm.addEventListener('submit', (e) => {
             } else {
                 const wind_dir = windDirLongFormLookUp[data['Wind_Direction']];
                 messageOne.textContent = `Location: ${data['Location']}`;
-                messageTwo.textContent = `The current forecast for ${location} is, ${data['Weather description']}. The temperature right now is ${data['Current Temperature']} and it feels like ${data['Feels Like']}. The wind speed is ${data['Wind_Speed']} and is blowing in the ${wind_dir} direction. There is a ${data['Precipitation']}% chance of rain.`;
+                messageTwo.textContent = `The current forecast for ${location} is, ${data['Weather description']}. The temperature right now is ${data['Current Temperature']} and it feels like ${data['Feels Like']}. The humidity is ${data['Humidity']} percent. The wind speed is ${data['Wind_Speed']} and is blowing in the ${wind_dir} direction. There is a ${data['Precipitation']}% chance of rain.`;
             }
         })
     })
