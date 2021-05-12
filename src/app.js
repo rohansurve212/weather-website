@@ -30,7 +30,7 @@ app.get('', (req, res) => {
 app.get('/about', (req, res) => {
     res.render('about', {
         title: 'About Me',
-        aboutMessage: 'I am Rohan Surve, the developer of this application. I am thrilled to bring you this simple but powerful application to know the current weather of any region around the globe.',
+        aboutMessage: 'I am Rohan Surve, the developer of this application. I am thrilled to bring you this simple but powerful application to know the current weather of any region around the globe. It uses data from mapbox.com and weatherstack.com!',
         name: 'The Jedi Master'
     })
 })
